@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="HomeContext" prefHeight="512.0" prefWidth="935.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDeliveryFormController">
+   <children>
+      <AnchorPane prefHeight="53.0" prefWidth="935.0" style="-fx-background-color: #30336b;">
+         <children>
+            <Label layoutX="17.0" layoutY="8.0" text="Parking System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="cmbOnDelivery" layoutX="61.0" layoutY="86.0" prefHeight="41.0" prefWidth="206.0" promptText="       On Delivery" />
+      <Button layoutX="757.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="41.0" prefWidth="130.0" style="-fx-background-radius: 10px;" text="Log Out" />
+      <Button layoutX="602.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnAddDriverOnAction" prefHeight="41.0" prefWidth="130.0" style="-fx-background-radius: 10px;" text="Add Driver" />
+      <TableView fx:id="tblOnDelivery" layoutX="60.0" layoutY="186.0" prefHeight="291.0" prefWidth="835.0">
+         <columns>
+            <TableColumn fx:id="colVehicleNumber" prefWidth="193.0" text="Vehicle Number" />
+            <TableColumn fx:id="colVehicleType" prefWidth="203.0" text="Vehicle Type" />
+            <TableColumn fx:id="colDriverName" prefWidth="223.0" text="Driver Name" />
+            <TableColumn fx:id="colLeftTime" prefWidth="215.0" text="Left Time" />
+         </columns>
+      </TableView>
+      <Button layoutX="446.0" layoutY="86.0" mnemonicParsing="false" onAction="#btnAddVehicleOnAction" prefHeight="41.0" prefWidth="130.0" style="-fx-background-radius: 10px;" text="Add Vehicle" />
+   </children>
+</AnchorPane>

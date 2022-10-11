@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="HomeContext" prefHeight="512.0" prefWidth="935.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InParkingFormController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="53.0" prefWidth="935.0" style="-fx-background-color: #30336b;">
+         <children>
+            <Label layoutX="17.0" layoutY="8.0" text="Parking System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="cmbInParking" layoutX="48.0" layoutY="76.0" prefHeight="41.0" prefWidth="206.0" promptText="       In Parking" />
+      <Button layoutX="753.0" layoutY="77.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="41.0" prefWidth="130.0" style="-fx-background-radius: 10px;" text="Log Out" />
+      <Button layoutX="603.0" layoutY="76.0" mnemonicParsing="false" onAction="#btnAddDriverOnAction" prefHeight="41.0" prefWidth="130.0" style="-fx-background-radius: 10px;" text="Add Driver" />
+      <Button layoutX="448.0" layoutY="76.0" mnemonicParsing="false" onAction="#btnAddVehicleOnAction" prefHeight="41.0" prefWidth="130.0" style="-fx-background-radius: 10px;" text="Add Vehicle" />
+      <TableView fx:id="tblInParking" layoutX="50.0" layoutY="176.0" prefHeight="291.0" prefWidth="835.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNumber" prefWidth="193.0" text="Vehicle Number" />
+            <TableColumn fx:id="colVehicleType" prefWidth="203.0" text="Vehicle Type" />
+            <TableColumn fx:id="colParkingSlot" prefWidth="223.0" text="Parking Slot" />
+            <TableColumn fx:id="colParkingTime" prefWidth="215.0" text="Parked Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

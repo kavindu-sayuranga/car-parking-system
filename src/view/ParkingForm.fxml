@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="HomeContext" prefHeight="464.0" prefWidth="804.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingFormController">
+   <children>
+      <AnchorPane prefHeight="53.0" prefWidth="804.0" style="-fx-background-color: #30336b;">
+         <children>
+            <Label layoutX="17.0" layoutY="8.0" text="Parking System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="112.0" text="Select Vehicle">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSelectVehicle" layoutX="142.0" layoutY="107.0" prefHeight="31.0" prefWidth="201.0" promptText="Select Vehicle" style="-fx-background-color: #eccc68;" />
+      <Label layoutX="25.0" layoutY="173.0" text="Vehicle Type">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="233.0" text="Driver">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbDriver" layoutX="143.0" layoutY="230.0" prefHeight="31.0" prefWidth="201.0" promptText="Driver" style="-fx-background-color: #eccc68;" />
+      <Button fx:id="btnPark" layoutX="452.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnParkVehicleOnAction" prefHeight="53.0" prefWidth="283.0" text="Park Vehicle">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelivery" layoutX="454.0" layoutY="248.0" mnemonicParsing="false" onAction="#btnOnDeliveryOnAction" prefHeight="53.0" prefWidth="283.0" text="On Delivery Shift">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="454.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="37.0" prefWidth="283.0" style="-fx-background-radius: 6px;" text="Management Log in">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_CENTER" layoutX="86.0" layoutY="297.0" prefHeight="137.0" prefWidth="268.0" style="-fx-border-color: #000000;" text="Your Parking Slot Number">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSlot" alignment="CENTER" layoutX="86.0" layoutY="338.0" prefHeight="83.0" prefWidth="268.0">
+         <font>
+            <Font name="System Bold" size="55.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVehicleType" alignment="CENTER" layoutX="142.0" layoutY="170.0" prefHeight="31.0" prefWidth="201.0" />
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="422.0" layoutY="103.0" prefHeight="37.0" prefWidth="152.0" style="-fx-border-color: #000000;" />
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="604.0" layoutY="103.0" prefHeight="37.0" prefWidth="152.0" style="-fx-border-color: #000000;" />
+      <Label layoutX="478.0" layoutY="74.0" text="Date">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="658.0" layoutY="74.0" text="Time">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
